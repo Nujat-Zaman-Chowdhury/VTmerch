@@ -8,10 +8,11 @@
 
 @font-face {
   font-family: 'ActOfRejection';
-  src: url('/src/assets/fonts/act_of_rejection.ttf') format('truetype');
+  src: url('/fonts/Act_Of_Rejection.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 
 body{
   margin: 0;
