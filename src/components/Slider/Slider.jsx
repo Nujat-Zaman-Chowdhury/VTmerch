@@ -62,7 +62,7 @@ const Slider = () => {
     return (
         <div
             ref={sliderRef}
-            className="slider-container flex gap-6 overflow-x-scroll scrollbar-hide md:ml-[48px] lg:ml-[187px] lg:-mt-16 z-50"
+            className="slider-container flex gap-6 overflow-x-scroll scrollbar-hide md:ml-[48px] lg:ml-[187px] lg:-mt-4 z-50"
             onMouseDown={dragStart}
             onMouseMove={dragging}
             onMouseUp={dragStop}
