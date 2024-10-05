@@ -8,16 +8,16 @@ const SignedSection = () => {
       <div className="md:pl-10 lg:pl-[121px] pb-10 lg:pb-[120px]">
        <div className="flex flex-col lg:flex-row gap-6 lg:gap-[85px]">
          {/* left part */}
-         <div className="pt-[133px] flex-1">
+         <div className="pt-8 md:pt-[133px] flex-1">
           <div className="ml-[39px]">
-          <h4 className="text-white text-[39px] font-medium uppercase">
+          <h4 className="text-white text-2xl mb-3 md:mb-0  md:text-[39px] font-medium uppercase">
             Patrick Bet-David&apos;s
           </h4>
           <h3 className="text-gradient uppercase md:text-[65px] lg:text-[70px] font-bold mb-2 lg:mb-[48px]">
             Signed <br />
             Collection
           </h3>
-          <button className="uppercase flex gap-3 px-8 py-4 rounded-[12px] font-inter text-black font-medium bg-white">
+          <button className="uppercase flex items-center gap-3 px-3 md:px-8 py-2 md:py-4 rounded-[12px] font-inter text-black font-medium bg-white">
             Shop now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,12 +40,12 @@ const SignedSection = () => {
         <div className="flex flex-col md:flex-row gap-6 items-center lg:pt-[101px]">
           <img
             src={book1}
-            className="md:w-[316px] lg:w-[370px] lg:h-[588px] object-cover"
+            className="w-[240px] md:w-[316px] lg:w-[370px] lg:h-[588px] object-cover"
             alt="book1"
           />
           <img
             src={book2}
-            className="md:w-[380px] lg:w-[404px] lg:h-[518px] object-cover"
+            className="w-[250px] md:w-[380px] lg:w-[404px] lg:h-[518px] object-cover"
             alt="book2"
           />
         </div>

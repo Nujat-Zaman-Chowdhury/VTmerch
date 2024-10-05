@@ -27,7 +27,7 @@ const products = [
 
 const ProductsSection = () => {
     return (
-        <div className="md:ml-10 lg:ml-[148px] md:py-[101px]">
+        <div className="md:ml-10 lg:ml-[148px] p-2 md:p-0 mt-10 md:mt-0 md:py-[101px]">
             <h1 className="uppercase font-montserrat text-2xl md:text-[40px] lg:text-[70px] font-semibold text-[#060606] tracking-[0.5px] leading-[120%] mb-[48px]">Buy 1 get 1 Free <br /> 
             on <span className="text-stroke">best selling products</span></h1>
 

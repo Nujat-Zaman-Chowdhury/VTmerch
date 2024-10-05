@@ -27,7 +27,7 @@ const MissionSection = () => {
       </div>
         <div className="z-50">
         <div className="w-full md:w-[400px] lg:w-full">
-        <h1 className="ml-6 lg:ml-[60px] -mt-16  text-white uppercase font-montserrat md:text-[31px] lg:text-[48px] font-bold">
+        <h1 className="ml-6 lg:ml-[60px] -mt-16  text-white uppercase font-montserrat text-[23px] md:text-[31px] lg:text-[48px] font-bold">
   Our mission is to enlighten, entertain  <br /> and empower current and future <br /> leaders around the world.
 </h1>
         </div>

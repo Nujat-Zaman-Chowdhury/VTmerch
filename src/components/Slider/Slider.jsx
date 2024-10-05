@@ -42,15 +42,15 @@ const Slider = () => {
 
     const dragStart = (e) => {
         isDragging = true;
-        startX = e.pageX || e.touches[0].pageX; // For touch devices
+        startX = e.pageX || e.touches[0].pageX; 
         scrollLeft = sliderRef.current.scrollLeft;
         sliderRef.current.classList.add('dragging');
     };
 
     const dragging = (e) => {
         if (!isDragging) return;
-        const x = e.pageX || e.touches[0].pageX; // For touch devices
-        const walk = (x - startX) * 1.5; // Scroll speed
+        const x = e.pageX || e.touches[0].pageX; 
+        const walk = (x - startX) * 1.5; 
         sliderRef.current.scrollLeft = scrollLeft - walk;
     };
 
@@ -62,7 +62,7 @@ const Slider = () => {
     return (
         <div
             ref={sliderRef}
-            className="slider-container flex gap-6 overflow-x-scroll scrollbar-hide ml-[48px] lg:ml-[187px] lg:-mt-16 z-50"
+            className="slider-container flex gap-6 overflow-x-scroll scrollbar-hide md:ml-[48px] lg:ml-[187px] lg:-mt-16 z-50"
             onMouseDown={dragStart}
             onMouseMove={dragging}
             onMouseUp={dragStop}
