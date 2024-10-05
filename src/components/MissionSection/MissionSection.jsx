@@ -1,6 +1,6 @@
 const MissionSection = () => {
     return (
-    <div className="bg-custom-gradient pl-[60px] pr-[78px] relative">
+    <div className="bg-custom-gradient md:pl-10 lg:pl-[90px] pr-0  md:pr-[78px] relative">
       
       <div className="pb-[175px]">
       {/* leftside */}
@@ -26,8 +26,8 @@ const MissionSection = () => {
         </svg>
       </div>
         <div className="z-50">
-        <div className="flex-1">
-        <h1 className="ml-[30px] -mt-16  text-white uppercase font-montserrat text-[35px] font-bold">
+        <div className="w-full md:w-[400px] lg:w-full">
+        <h1 className="ml-6 lg:ml-[60px] -mt-16  text-white uppercase font-montserrat md:text-[31px] lg:text-[48px] font-bold">
   Our mission is to enlighten, entertain  <br /> and empower current and future <br /> leaders around the world.
 </h1>
         </div>
@@ -35,7 +35,7 @@ const MissionSection = () => {
       </div> 
         
       </div>
-      <div className="w-[571px] h-[725px] -top-2 absolute  right-0">
+      <div className="w-full md:w-[460px] lg:w-[571px] lg:h-[725px] md:bottom-0 lg:top-0  md:absolute right-0  lg:right-[48px]">
         <img src="/img/img (5).png" className="w-full h-full  -mt-32 object-cover" alt="" />
         </div>
     </div>

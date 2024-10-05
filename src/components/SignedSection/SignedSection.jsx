@@ -5,14 +5,15 @@ import signature from "../../../public/img/pat-signature White 1.png"
 const SignedSection = () => {
   return (
     <div className="bg-black  font-montserrat">
-      <div className="container mx-auto pb-[120px]">
-       <div className="flex justify-between">
+      <div className="md:pl-10 lg:pl-[121px] pb-10 lg:pb-[120px]">
+       <div className="flex flex-col lg:flex-row gap-6 lg:gap-[85px]">
          {/* left part */}
          <div className="pt-[133px] flex-1">
+          <div className="ml-[39px]">
           <h4 className="text-white text-[39px] font-medium uppercase">
             Patrick Bet-David&apos;s
           </h4>
-          <h3 className="text-gradient uppercase text-[70px] font-bold mb-[48px]">
+          <h3 className="text-gradient uppercase md:text-[65px] lg:text-[70px] font-bold mb-2 lg:mb-[48px]">
             Signed <br />
             Collection
           </h3>
@@ -31,19 +32,20 @@ const SignedSection = () => {
               />
             </svg>
           </button>
-          <img src={signature} className="" alt="" />
+          </div>
+          <img src={signature} className="" alt="patt signature" />
         </div>
 
         {/* right part */}
-        <div className="flex items-center pt-[101px]">
+        <div className="flex flex-col md:flex-row gap-6 items-center lg:pt-[101px]">
           <img
             src={book1}
-            className="w-[470px] h-[588px] object-cover"
+            className="md:w-[316px] lg:w-[370px] lg:h-[588px] object-cover"
             alt="book1"
           />
           <img
             src={book2}
-            className="w-[404px] h-[518px] object-cover"
+            className="md:w-[380px] lg:w-[404px] lg:h-[518px] object-cover"
             alt="book2"
           />
         </div>

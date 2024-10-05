@@ -6,7 +6,7 @@ import SignedSection from "../../components/SignedSection/SignedSection";
 
 const Home = () => {
     return (
-        <div className="min-w-[1920px]">
+        <div className="w-full lg:min-w-[1920px] mx-auto">
             <HeroSection/>
             <ProductsSection/>
             <SignedSection/>

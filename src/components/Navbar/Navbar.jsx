@@ -2,14 +2,14 @@ import logo from "../../assets/Logo/Valuetainment_Logo_2018 1 (1).jpg"
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between ml-[62px] pt-[49px]">
+        <div className="flex items-center justify-between ml-6  lg:ml-[62px] pt-[49px]">
             {/* logo */}
             <div className="flex items-center gap-3">
                 <img src={logo} alt="" className="object-cover" />
-                <h1 className="font-montserrat text-white font-extrabold text-[112px]">VTMERCH</h1>
+                <h1 className="font-montserrat text-white font-extrabold md:text-[46px] lg:text-[112px]">VTMERCH</h1>
             </div>
 
-            <div className="mr-[156px]">
+            <div className="mr-[50px] lg:mr-[156px] cursor-pointer">
                 {/* burger menu */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <g clipPath="url(#clip0_0_53)">

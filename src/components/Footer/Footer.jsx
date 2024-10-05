@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-black px-[148px] py-[48px]">
+    <div className="bg-black px-5 md:px-10 lg:px-[148px] py-[48px]">
       <div className="py-[48px]">
         <div className="flex items-center mb-8">
           <svg
@@ -191,7 +191,7 @@ const Footer = () => {
               fill="#EA2127"
             />
           </svg>
-          <h1 className="font-montserrat text-white font-extrabold text-[100px]">
+          <h1 className="font-montserrat text-white font-extrabold lg:text-[100px]">
             VTMERCH
           </h1>
         </div>
@@ -199,9 +199,9 @@ const Footer = () => {
       </div>
 
       {/* social lnks */}
-      <div className="flex gap-[144px] mb-[120px]">
-        <div className="w-[517px]">
-          <p className="font-montserrat text-white text-[24px] mb-[48px]">
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-[144px] mb-[120px] md:items-center">
+        <div className="w-full md:w-[517px]">
+          <p className="font-montserrat text-white text-lg md:text-[24px] mb-[48px]">
             Subscribe and be the first to receive notifications about our
             upcoming releases and the latest news.{" "}
           </p>
@@ -213,7 +213,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-[174px] font-inter">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-[174px] font-inter">
           {/* Customer Services */}
           <div className="text-white">
             <h2 className="text-lg mb-4 text-[20px] font-medium">
@@ -431,7 +431,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex  flex-col md:flex-row gap-5 md:gap-0 items-center justify-center md:justify-between">
       <p className="text-[#FFFFFFCC]">© 2024 Valuetainment Store. All rights reserved.</p>
       <div className="flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20" fill="none">
