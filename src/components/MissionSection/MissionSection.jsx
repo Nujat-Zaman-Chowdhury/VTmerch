@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const MissionSection = () => {
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      AOS.init({ duration: 1000 });
+  } else {
+      AOS.init({ disable: true });
+  }
+  }, []);
     return (
     <div className="bg-custom-gradient md:pl-10 lg:pl-[90px] pr-0  md:pr-[78px] relative">
       
@@ -35,8 +45,17 @@ const MissionSection = () => {
       </div> 
         
       </div>
-      <div className="w-full md:w-[460px] lg:w-[571px] lg:h-[725px] md:bottom-0 lg:top-0  md:absolute right-0  lg:right-[48px]">
-        <img src="/img/img (5).png" className="w-full h-full  -mt-32 object-cover" alt="" />
+
+      {/* right image */}
+      <div className="w-full md:w-[460px] lg:w-[571px] lg:h-[725px] md:bottom-0 lg:top-0  md:absolute right-0  lg:right-[48px]"
+      data-aos="zoom-in" 
+      data-aos-delay="3000" 
+      style={{
+        transformStyle: "preserve-3d", 
+        transition: "transform 0.5s ease", 
+      }}
+      >
+        <img src="/img/img (5).png" className="w-full h-full  -mt-32 object-cover" alt="patt" />
         </div>
     </div>
   );

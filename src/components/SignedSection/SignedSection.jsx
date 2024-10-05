@@ -1,14 +1,26 @@
 import book1 from "../../../public/img/Choose-Your-Enemies (2).png";
 import book2 from "../../../public/img/img (8).png";
 import signature from "../../../public/img/pat-signature White 1.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const SignedSection = () => {
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      AOS.init({ duration: 1000 });
+  } else {
+      AOS.init({ disable: true });
+  }
+  }, []);
   return (
     <div className="bg-black  font-montserrat">
       <div className="md:pl-10 lg:pl-[121px] pb-10 lg:pb-[120px]">
        <div className="flex flex-col lg:flex-row gap-6 lg:gap-[85px]">
          {/* left part */}
-         <div className="pt-8 md:pt-[133px] flex-1">
+         <div className="pt-8 md:pt-[133px] flex-1"
+         data-aos="fade-right"
+         >
           <div className="ml-[39px]">
           <h4 className="text-white text-2xl mb-3 md:mb-0  md:text-[39px] font-medium uppercase">
             Patrick Bet-David&apos;s
@@ -17,7 +29,7 @@ const SignedSection = () => {
             Signed <br />
             Collection
           </h3>
-          <button className="uppercase flex items-center gap-3 px-3 md:px-8 py-2 md:py-4 rounded-[12px] font-inter text-black font-medium bg-white">
+          <button className="uppercase flex items-center gap-3 px-3 md:px-8 py-2 md:py-4 rounded-[12px] font-inter text-black font-medium bg-white hover:shadow-sm hover:shadow-white">
             Shop now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +49,9 @@ const SignedSection = () => {
         </div>
 
         {/* right part */}
-        <div className="flex flex-col md:flex-row gap-6 items-center lg:pt-[101px]">
+        <div className="flex flex-col md:flex-row gap-6 items-center lg:pt-[101px]"
+        data-aos="fade-left"
+        >
           <img
             src={book1}
             className="w-[240px] md:w-[316px] lg:w-[370px] lg:h-[588px] object-cover"

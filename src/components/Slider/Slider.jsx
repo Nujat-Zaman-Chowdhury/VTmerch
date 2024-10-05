@@ -1,4 +1,6 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const products = [
     {
@@ -59,8 +61,19 @@ const Slider = () => {
         sliderRef.current.classList.remove('dragging');
     };
 
+    useEffect(() => {
+        if (window.innerWidth > 768) {
+            AOS.init({ duration: 1000 });
+        } else {
+            AOS.init({ disable: true });
+        }
+    }, []);
+
     return (
         <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
             ref={sliderRef}
             className="slider-container flex gap-6 overflow-x-scroll scrollbar-hide md:ml-[48px] lg:ml-[187px] lg:-mt-4 z-50"
             onMouseDown={dragStart}
@@ -74,6 +87,7 @@ const Slider = () => {
             {
                 products.map((product, index) => (
                     <div
+                    
                         key={index}
                         className="productCard rounded-[12px] pb-6 px-4 pt-4 flex-shrink-0 w-[333px] lg:w-[400px] font-inter"
                     >
